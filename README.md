@@ -1,1 +1,3 @@
-# nelson0720j.github.io
+# Fu Nelson | 系統與韌體工程師個人履歷網站
+
+這個儲存庫是用於託管傅孟楷 (Fu Nelson) 的個人專業履歷與作品集的靜態網站。

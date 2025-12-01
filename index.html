@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>傅孟楷 Fu Nelson | Firmware & System Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Fu Nelson.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Expertise</a></li>
+            <li><a href="#thesis">Research</a></li>
+            <li><a href="#projects">Works</a></li>
+            <li><a href="mailto:nelson10812137@gmail.com" class="btn-contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="about">
+        <div class="hero-content">
+            <span class="greeting">Hello, I'm</span>
+            <h1>Fu Nelson</h1>
+            <h2>System Software & Firmware Engineer</h2>
+            <p>
+                融合底層系統與現代架構思維。專注於 <strong>Linux Kernel</strong>、<strong>RISC-V</strong> 與 <strong>Embedded
+                    Systems</strong> 開發。
+                具備從底層驅動 (Driver) 到上層應用 (Application) 的完整整合能力。
+            </p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="number">C/C++</span>
+                    <span class="label">Expertise</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">RISC-V</span>
+                    <span class="label">Architecture</span>
+                </div>
+                <div class="stat-item">
+                    <span class="number">OS</span>
+                    <span class="label">Development</span>
+                </div>
+            </div>
+
+            <div class="cta-group">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="https://github.com/nelson0720j" target="_blank" class="github-link"><i
+                        class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <div class="blob-shape"></div>
+            <img src="images/profile.jpg" alt="Fu Nelson" class="hero-img">
+        </div>
+    </header>
+
+    <section id="skills" class="section">
+        <div class="section-header">
+            <h3 class="sub-heading">My Arsenal</h3>
+            <h2 class="heading">Technical Expertise</h2>
+        </div>
+
+        <div class="skills-wrapper">
+            <div class="skill-card">
+                <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                <h3>System Programming</h3>
+                <ul class="skill-list">
+                    <li><strong>C / C++</strong> </li>
+                    <li><strong>Linux Kernel</strong> Internals & Drivers</li>
+                    <li><strong>RISC-V</strong> Architecture & Assembly</li>
+                    <li><strong>Multi-threading</strong> (Context Switching & Scheduling)</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon-box"><i class="fa-brands fa-python"></i></div>
+                <h3>AI & Python Ecosystem</h3>
+                <ul class="skill-list">
+                    <li><strong>Python</strong> (Scripting & Automation)</li>
+                    <li><strong>Deep Learning</strong> (PyTorch, Transformer)</li>
+                    <li><strong>NLP</strong> (BERT, NER, Translation)</li>
+                    <li><strong>Data Processing</strong> (Pandas, NumPy)</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon-box"><i class="fa-solid fa-code-branch"></i></div>
+                <h3>DevOps & Tools</h3>
+                <ul class="skill-list">
+                    <li><strong>Git / GitHub Actions</strong></li>
+                    <li><strong>Docker</strong> Containerization</li>
+                    <li><strong>GDB / Valgrind</strong> (Debugging)</li>
+                    <li><strong>Flask</strong> (RESTful API Service)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="thesis" class="section dark-bg">
+        <div class="section-header">
+            <h3 class="sub-heading">Master's Research</h3>
+            <h2 class="heading">Thesis Breakdown</h2>
+        </div>
+
+        <div class="project-item">
+            <div class="project-text">
+                <span class="project-year">National Cheng Kung University</span>
+                <h3>Real-entity-oriented Pre- and Post-processing Mechanisms for NMT</h3>
+                <p class="project-desc">
+                    <strong>論文題目：用於神經機器翻譯的實體導向前後處理機制</strong><br>
+                    針對通用神經機器翻譯 (NMT) 模型在處理專有名詞（如人名、地名、術語）時容易出現的語意丟失或誤譯問題，設計了一套模組化的前後處理 Pipeline 來改善翻譯的準確性。
+                </p>
+
+                <ul class="project-details">
+                    <li><i class="fa-solid fa-check"></i> <strong>三層式 Pipeline 架構：</strong> 設計並實作
+                        <code>Preprocessor</code> (前處理) &rarr; <code>Translator</code> (翻譯核心) &rarr;
+                        <code>Postprocessor</code> (後處理) 的系統流程。</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>NER 模組整合：</strong> 整合 <strong>BERT</strong> 模型進行命名實體識別
+                        (Named Entity Recognition)，在翻譯前將關鍵實體轉換為佔位符。</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>混合式還原策略：</strong> 實作「字典查表」與「規則導向
+                        (Rule-based)」的雙重機制，將佔位符精準還原為目標語言的實體名稱。</li>
+                </ul>
+
+                <ul class="tech-tags">
+                    <li>Python</li>
+                    <li>System Pipeline</li>
+                    <li>BERT/Transformer</li>
+                    <li>Rule-based Algorithm</li>
+                </ul>
+            </div>
+            <div class="project-visual color-3">
+                <div class="visual-content">
+                    <i class="fa-solid fa-book-journal-whills fa-3x"></i>
+                    <span>System Architecture</span>
+                    <span style="font-size: 0.8rem; font-weight: 400; margin-top: 5px;">NCKU CSIE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h3 class="sub-heading">Selected Works</h3>
+            <h2 class="heading">System & Firmware Projects</h2>
+        </div>
+
+        <div class="projects-container">
+
+        <div class="project-item">
+            <div class="project-text">
+                <span class="project-year">System Kernel</span>
+                <h3>RISC-V Mini OS Extension</h3>
+                <p class="project-desc">
+                    基於精簡的 RISC-V 作業系統，在 QEMU 模擬環境中實作多工處理核心。專注於特權模式切換 (S-mode/U-mode) 與硬體抽象層 (SBI) 的互動。
+                </p>
+                <ul class="project-details">
+                    <li><i class="fa-solid fa-check"></i> 實作 <strong>Context Switching</strong>：透過 Assembly 保存/還原 Callee-saved
+                        registers (s0-s11)，並管理 Kernel Stack 指標。</li>
+
+                    <li><i class="fa-solid fa-check"></i> 實現 <strong>User Mode Execution</strong>：配置 <code>Trapframe</code> 與
+                        <code>sstatus</code> CSR，利用 <code>sret</code> 指令安全切換至使用者空間 (U-mode)。</li>
+
+                    <li><i class="fa-solid fa-check"></i> <strong>記憶體管理：</strong> 在排程切換時更新 <code>satp</code> 並執行
+                        <code>sfence.vma</code> 刷新 TLB，確保記憶體隔離。</li>
+                </ul>
+                <ul class="tech-tags">
+                    <li>RISC-V Assembly</li>
+                    <li>Privilege Mode (S/U)</li>
+                    <li>Trap Handling</li>
+                </ul>
+                <a href="https://github.com/nelson0720j/posix_thread_in_1k_lines/tree/pthread" target="_blank"
+                    class="project-link">View Code <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="project-visual color-1">
+                <div class="visual-content">
+                    <i class="fa-solid fa-microchip fa-3x"></i>
+                    <span>Kernel Internals</span>
+                </div>
+            </div>
+        </div>
+
+            <div class="project-item reverse">
+                <div class="project-text">
+                    <span class="project-year">Linux Kernel</span>
+                    <h3>Linux Kernel Queue Implementation</h3>
+                    <p class="project-desc">
+                        模擬 Linux 核心開發流程，實作高效能雙向鏈結串列。通過 Valgrind 記憶體檢測，並整合 dudect 進行安全性驗證。
+                    </p>
+                    <ul class="project-details">
+                        <li><i class="fa-solid fa-check"></i> 實作針對 Linked List 的 <strong>Merge Sort</strong>。</li>
+                        <li><i class="fa-solid fa-check"></i> 使用 <strong>Valgrind</strong> 確保無 Memory Leak。</li>
+                        <li><i class="fa-solid fa-check"></i> 整合 <strong>dudect</strong> 進行 Constant Time Verification。
+                        </li>
+                    </ul>
+                    <ul class="tech-tags">
+                        <li>C Language</li>
+                        <li>Linux Kernel</li>
+                        <li>Valgrind</li>
+                    </ul>
+                    <a href="https://github.com/nelson0720j/lab0-c" target="_blank" class="project-link">View Code <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="project-visual color-2">
+                    <div class="visual-content">
+                        <i class="fa-brands fa-linux fa-3x"></i>
+                        <span>Kernel API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-text">
+                    <span class="project-year">Integration</span>
+                    <h3>Kasih Translation System</h3>
+                    <p class="project-desc">
+                        整合 NLP 模型與後端架構的跨平台 App。展現從模型訓練、Docker 部署到 API Gateway 的完整系統整合能力。
+                    </p>
+                    <ul class="project-details">
+                        <li><i class="fa-solid fa-check"></i> 整合 <strong>NLP 模型</strong> 實現多語系互譯。</li>
+                        <li><i class="fa-solid fa-check"></i> 優化 API Gateway 架構，回應時間 <strong>&lt; 1s</strong>。</li>
+                        <li><i class="fa-solid fa-check"></i> 領導團隊開發，累積 <strong>6,000+</strong> 下載量。</li>
+                    </ul>
+                    <ul class="tech-tags">
+                        <li>Flutter</li>
+                        <li>Python/AI</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+
+                <div class="project-visual color-3 app-visual-container">
+                    <div class="visual-inner">
+                        <div class="app-screenshots">
+                            <img src="images/kaish_home.png" alt="Kasih Home Screen" class="phone-mockup">
+                            <img src="images/kasih_translate.png" alt="Kasih Translate Screen" class="phone-mockup">
+                        </div>
+                        <div class="qrcode-container">
+                            <div class="qrcode-box">
+                                <img src="images/kasih_ios_qrcode.png" alt="Download on iOS">
+                                <span class="qr-label"><i class="fa-brands fa-apple"></i> iOS</span>
+                            </div>
+                            <div class="qrcode-box">
+                                <img src="images/kasih_android_qrcode.png" alt="Download on Android">
+                                <span class="qr-label"><i class="fa-brands fa-android"></i> Android</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Let's build robust systems.</h2>
+            <p>Open for opportunities in Firmware / System Software Engineering.</p>
+            <a href="mailto:nelson10812137@gmail.com" class="email-link">nelson10812137@gmail.com</a>
+
+            <div class="social-links">
+                <a href="https://github.com/nelson0720j" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/meng-kai-fu-a876051b6/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">© 2025 Fu Nelson.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
